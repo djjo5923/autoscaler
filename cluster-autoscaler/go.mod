@@ -3,31 +3,17 @@ module k8s.io/autoscaler/cluster-autoscaler
 go 1.16
 
 require (
-	cloud.google.com/go v0.81.0
-	github.com/Azure/azure-sdk-for-go v63.4.0+incompatible
-	github.com/Azure/go-autorest/autorest v0.11.27
-	github.com/Azure/go-autorest/autorest/adal v0.9.19
-	github.com/Azure/go-autorest/autorest/azure/auth v0.5.8
-	github.com/Azure/go-autorest/autorest/date v0.3.0
-	github.com/Azure/go-autorest/autorest/to v0.4.0
-	github.com/Azure/skewer v0.0.14
-	github.com/aws/aws-sdk-go v1.38.49
-	github.com/digitalocean/godo v1.27.0
-	github.com/ghodss/yaml v1.0.0
-	github.com/gofrs/uuid v4.0.0+incompatible
+	github.com/evanphx/json-patch v5.6.0+incompatible // indirect
+	github.com/fsnotify/fsnotify v1.5.4 // indirect
+	github.com/go-resty/resty/v2 v2.7.0
 	github.com/golang/mock v1.6.0
-	github.com/google/go-querystring v1.0.0
-	github.com/google/uuid v1.1.2
-	github.com/jmespath/go-jmespath v0.4.0
-	github.com/json-iterator/go v1.1.12
-	github.com/pkg/errors v0.9.1
+	github.com/google/go-cmp v0.5.6 // indirect
+	github.com/onsi/ginkgo v1.16.5 // indirect
+	github.com/onsi/gomega v1.19.0 // indirect
 	github.com/prometheus/client_golang v1.12.1
 	github.com/satori/go.uuid v1.2.0
 	github.com/spf13/pflag v1.0.5
 	github.com/stretchr/testify v1.7.1
-	golang.org/x/crypto v0.0.0-20220214200702-86341886e292
-	golang.org/x/oauth2 v0.0.0-20211104180415-d3ed0bb246c8
-	google.golang.org/api v0.46.0
 	google.golang.org/grpc v1.42.0
 	google.golang.org/protobuf v1.27.1
 	gopkg.in/gcfg.v1 v1.2.0
@@ -42,9 +28,8 @@ require (
 	k8s.io/klog/v2 v2.60.1
 	k8s.io/kubelet v0.24.0
 	k8s.io/kubernetes v1.25.0-alpha.0
-	k8s.io/legacy-cloud-providers v0.0.0
 	k8s.io/utils v0.0.0-20220210201930-3a6ce19ff2f9
-	sigs.k8s.io/cloud-provider-azure v1.23.11
+	sigs.k8s.io/yaml v1.3.0 // indirect
 )
 
 replace github.com/aws/aws-sdk-go/service/eks => github.com/aws/aws-sdk-go/service/eks v1.38.49

@@ -1,0 +1,5 @@
+[Global]
+auth-url="http://auth.url"
+user-id=""
+secret-name=""
+secret-namespace=""
